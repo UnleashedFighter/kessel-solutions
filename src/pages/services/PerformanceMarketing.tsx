@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -22,8 +23,14 @@ const PerformanceMarketing = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Performance Marketing | Paid Ads & Growth | Kessel Solutions"
+        description="ROI-focused performance marketing—paid ads, CRO, A/B testing, landing pages, retargeting, and growth systems that scale."
+        canonical="https://kesselsolutions.netlify.app/services/performance-marketing"
+      />
+
       <Header />
-      
+
       <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 px-4 md:px-6 lg:px-12">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -56,7 +63,9 @@ const PerformanceMarketing = () => {
                 ROI-OBSESSED GROWTH
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                We don't chase vanity metrics. Every campaign is engineered with one goal: measurable business growth. Through rigorous testing, data analysis, and continuous optimization, we turn marketing spend into predictable revenue. No guesswork. No wasted budget. Just results that compound.
+                We don’t chase vanity metrics. Every campaign is engineered for measurable
+                business growth—turning ad spend into predictable revenue through testing,
+                data analysis, and continuous optimization.
               </p>
             </div>
 
@@ -65,10 +74,12 @@ const PerformanceMarketing = () => {
                 DATA-DRIVEN PRECISION
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed mb-6">
-                We build marketing machines that learn and improve with every interaction. From initial audience research to campaign launch and beyond, every decision is backed by data. We identify high-performing channels, optimize conversion paths, and scale what works while killing what doesn't.
+                From audience research to launch and scale, every decision is backed by data.
+                We double down on what works and eliminate wasted spend.
               </p>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                Our approach combines paid advertising mastery across Google, Meta, and LinkedIn with sophisticated conversion optimization and testing frameworks. The result? Marketing that pays for itself and then some.
+                Our approach combines paid advertising mastery across Google, Meta, and LinkedIn
+                with conversion optimization and testing frameworks that compound results.
               </p>
             </div>
 
@@ -86,7 +97,9 @@ const PerformanceMarketing = () => {
                     className="flex items-center gap-3 p-4 border border-border bg-card hover:border-primary transition-colors"
                   >
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-sm md:text-base font-inter">{feature}</span>
+                    <span className="text-sm md:text-base font-inter">
+                      {feature}
+                    </span>
                   </motion.div>
                 ))}
               </div>
@@ -116,7 +129,7 @@ const PerformanceMarketing = () => {
       </section>
 
       <Footer />
-      
+
       <ContactFormModal
         open={isContactModalOpen}
         onOpenChange={setIsContactModalOpen}
