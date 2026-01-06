@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -22,8 +23,14 @@ const Analytics = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Analytics & Tracking Services | Kessel Solutions"
+        description="Analytics and tracking systems that reveal what’s working—GA4 setup, funnels, dashboards, heatmaps, and conversion insights."
+        canonical="https://kesselsolutions.netlify.app/services/analytics"
+      />
+
       <Header />
-      
+
       <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 px-4 md:px-6 lg:px-12">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -56,7 +63,9 @@ const Analytics = () => {
                 MEASURE WHAT MATTERS
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                You can't optimize what you don't measure. We build comprehensive analytics systems that track every critical touchpoint in your user journey. From initial visit to final conversion, we capture the data that reveals what's working, what's not, and exactly where to focus your optimization efforts for maximum impact.
+                You can't optimize what you don't measure. We build comprehensive
+                analytics systems that track every critical touchpoint in your user
+                journey—from first visit to final conversion.
               </p>
             </div>
 
@@ -65,10 +74,13 @@ const Analytics = () => {
                 INSIGHTS THAT DRIVE ACTION
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed mb-6">
-                Data without insight is just noise. We transform raw numbers into actionable intelligence. Our analytics implementations go beyond basic tracking—we build custom dashboards, set up advanced conversion funnels, and create automated reports that surface the insights you need to make confident decisions.
+                Data without insight is just noise. We turn raw numbers into clear,
+                actionable intelligence through dashboards, funnels, and automated
+                reporting.
               </p>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                Whether you need Google Analytics 4 configured correctly, custom event tracking, heat mapping, or advanced attribution modeling, we ensure you have complete visibility into your digital performance.
+                From GA4 configuration to advanced attribution modeling, we give
+                you full visibility into your digital performance.
               </p>
             </div>
 
@@ -86,7 +98,9 @@ const Analytics = () => {
                     className="flex items-center gap-3 p-4 border border-border bg-card hover:border-primary transition-colors"
                   >
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-sm md:text-base font-inter">{feature}</span>
+                    <span className="text-sm md:text-base font-inter">
+                      {feature}
+                    </span>
                   </motion.div>
                 ))}
               </div>
@@ -116,7 +130,7 @@ const Analytics = () => {
       </section>
 
       <Footer />
-      
+
       <ContactFormModal
         open={isContactModalOpen}
         onOpenChange={setIsContactModalOpen}
