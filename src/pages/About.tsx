@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -7,30 +8,36 @@ const values = [
   {
     icon: Target,
     title: "Precision-Driven",
-    description: "Every decision backed by data, every design optimized for conversion."
+    description: "Every decision backed by data, every design optimized for conversion.",
   },
   {
     icon: Zap,
     title: "Speed & Agility",
-    description: "We move fast without sacrificing quality. Your timeline is our priority."
+    description: "We move fast without sacrificing quality. Your timeline is our priority.",
   },
   {
     icon: Users,
     title: "Partnership Mentality",
-    description: "We're not just a vendor—we're an extension of your team."
+    description: "We're not just a vendor—we're an extension of your team.",
   },
   {
     icon: Award,
     title: "Excellence Standard",
-    description: "We don't settle for good enough. We push for exceptional, every time."
-  }
+    description: "We don't settle for good enough. We push for exceptional, every time.",
+  },
 ];
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="About Kessel Solutions | Our Approach & Values"
+        description="Learn how Kessel Solutions builds forward-pushing digital systems through precision, speed, and performance-driven execution."
+        canonical="https://kesselsolutions.netlify.app/about"
+      />
+
       <Header />
-      
+
       <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 px-4 md:px-6 lg:px-12 overflow-hidden">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -45,7 +52,9 @@ const About = () => {
               <span className="text-primary">ACCELERATE GROWTH</span>
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-inter font-light leading-relaxed max-w-3xl">
-              Kessel Solutions is a digital agency obsessed with one thing: building forward-pushing systems that transform brands into market leaders. No fluff. No mediocrity. Just relentless execution.
+              Kessel Solutions is a digital agency obsessed with one thing: building
+              forward-pushing systems that transform brands into market leaders. No
+              fluff. No mediocrity. Just relentless execution.
             </p>
           </motion.div>
 
@@ -60,13 +69,16 @@ const About = () => {
             </h2>
             <div className="space-y-6 md:space-y-8 text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
               <p>
-                We don't do cookie-cutter solutions. Every project starts with deep research into your business, your audience, and your market. We identify opportunities others miss and build strategies that capitalize on them.
+                We don't do cookie-cutter solutions. Every project starts with deep
+                research into your business, your audience, and your market.
               </p>
               <p>
-                Our process is ruthlessly efficient: discovery, design, development, and optimization. Each phase engineered to move you forward faster. We combine cutting-edge technology with conversion-focused design to create digital experiences that don't just look good—they perform.
+                Our process is ruthlessly efficient: discovery, design, development,
+                and optimization. Each phase engineered to move you forward faster.
               </p>
               <p>
-                We work with brands that refuse to settle. Companies that understand digital isn't just a channel—it's the engine of modern business. If you're ready to accelerate, we're ready to build.
+                We work with brands that refuse to settle. Companies that understand
+                digital isn't just a channel—it's the engine of modern business.
               </p>
             </div>
           </motion.div>
