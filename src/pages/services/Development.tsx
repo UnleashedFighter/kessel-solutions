@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -22,8 +23,14 @@ const Development = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Web Development Services | Kessel Solutions"
+        description="Custom web development built for speed and scale—modern stacks, clean architecture, APIs, cloud deployment, and long-term support."
+        canonical="https://kesselsolutions.netlify.app/services/development"
+      />
+
       <Header />
-      
+
       <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 px-4 md:px-6 lg:px-12">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -56,7 +63,8 @@ const Development = () => {
                 ENGINEERED FOR PERFORMANCE
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                Speed isn't a feature—it's the foundation. We build applications that load instantly, scale effortlessly, and perform flawlessly under pressure. Using modern frameworks and cutting-edge technologies, we create digital products that don't just meet today's standards—they exceed tomorrow's expectations.
+                Speed isn't a feature—it's the foundation. We build applications that load instantly,
+                scale effortlessly, and perform flawlessly under pressure.
               </p>
             </div>
 
@@ -65,10 +73,13 @@ const Development = () => {
                 BUILT TO SCALE
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed mb-6">
-                Your business won't stay the same size. Why should your technology? We architect solutions that grow with you—from startup MVP to enterprise-level traffic. Our development approach prioritizes modularity, maintainability, and scalability from day one.
+                Your business won't stay the same size. We architect solutions that grow with you—from
+                startup MVP to enterprise-level traffic.
               </p>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                Whether it's a high-converting landing page, a complex web application, or a custom API integration, we leverage the best tools for the job: React, Next.js, TypeScript, Node.js, and modern cloud infrastructure. Clean code. Solid architecture. Zero compromises.
+                Whether it's a high-converting landing page, a complex web application, or a custom API
+                integration, we leverage the best tools for the job: React, Next.js, TypeScript, Node.js,
+                and modern cloud infrastructure.
               </p>
             </div>
 
@@ -116,11 +127,8 @@ const Development = () => {
       </section>
 
       <Footer />
-      
-      <ContactFormModal
-        open={isContactModalOpen}
-        onOpenChange={setIsContactModalOpen}
-      />
+
+      <ContactFormModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
     </div>
   );
 };
