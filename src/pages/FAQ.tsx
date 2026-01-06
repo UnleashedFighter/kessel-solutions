@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -11,43 +12,57 @@ import {
 const faqs = [
   {
     question: "What is your typical project timeline?",
-    answer: "Project timelines vary based on scope and complexity. A standard website typically takes 4-6 weeks from kickoff to launch, including design, development, and revisions. More complex applications with custom features may take 8-12 weeks. We'll provide a detailed timeline during our initial consultation."
+    answer:
+      "Project timelines vary based on scope and complexity. A standard website typically takes 4-6 weeks from kickoff to launch, including design, development, and revisions. More complex applications with custom features may take 8-12 weeks. We'll provide a detailed timeline during our initial consultation.",
   },
   {
     question: "Do you offer ongoing support and maintenance?",
-    answer: "Yes, we provide comprehensive support and maintenance packages. This includes regular updates, security patches, performance monitoring, content updates, and technical support. We offer flexible monthly retainer options tailored to your needs."
+    answer:
+      "Yes, we provide comprehensive support and maintenance packages. This includes regular updates, security patches, performance monitoring, content updates, and technical support. We offer flexible monthly retainer options tailored to your needs.",
   },
   {
     question: "What technologies do you work with?",
-    answer: "We specialize in modern, cutting-edge technologies including React, Next.js, TypeScript, Tailwind CSS, and Node.js. For backend solutions, we leverage cloud platforms like AWS, Supabase, and Firebase. We always choose the best tech stack based on your specific project requirements."
+    answer:
+      "We specialize in modern, cutting-edge technologies including React, Next.js, TypeScript, Tailwind CSS, and Node.js. For backend solutions, we leverage cloud platforms like AWS, Supabase, and Firebase. We always choose the best tech stack based on your specific project requirements.",
   },
   {
     question: "How much does a typical project cost?",
-    answer: "Project costs vary significantly based on requirements, features, and complexity. Simple websites start around $5,000, while complex applications can range from $15,000 to $50,000+. We offer transparent pricing and will provide a detailed quote after understanding your specific needs."
+    answer:
+      "Project costs vary significantly based on requirements, features, and complexity. Simple websites start around $5,000, while complex applications can range from $15,000 to $50,000+. We offer transparent pricing and will provide a detailed quote after understanding your specific needs.",
   },
   {
     question: "What is your design process?",
-    answer: "Our design process is collaborative and iterative. We start with discovery and research, followed by wireframing and prototyping. Once approved, we move to high-fidelity designs with multiple revision rounds. We ensure you're involved at every stage and deliver designs that align perfectly with your brand vision."
+    answer:
+      "Our design process is collaborative and iterative. We start with discovery and research, followed by wireframing and prototyping. Once approved, we move to high-fidelity designs with multiple revision rounds. We ensure you're involved at every stage and deliver designs that align perfectly with your brand vision.",
   },
   {
     question: "Can you help with marketing and SEO?",
-    answer: "Absolutely. We offer comprehensive performance marketing services including SEO optimization, paid advertising campaigns, content strategy, and analytics implementation. Our data-driven approach ensures your site not only looks great but also drives measurable results."
+    answer:
+      "Absolutely. We offer comprehensive performance marketing services including SEO optimization, paid advertising campaigns, content strategy, and analytics implementation. Our data-driven approach ensures your site not only looks great but also drives measurable results.",
   },
   {
     question: "Do you work with clients remotely?",
-    answer: "Yes, we work with clients worldwide. Our fully remote workflow includes regular video calls, collaborative tools, and clear communication channels. We've successfully delivered projects for clients across different time zones and maintain the same high standards regardless of location."
+    answer:
+      "Yes, we work with clients worldwide. Our fully remote workflow includes regular video calls, collaborative tools, and clear communication channels. We've successfully delivered projects for clients across different time zones and maintain the same high standards regardless of location.",
   },
   {
     question: "What if I need changes after the project is complete?",
-    answer: "We include a revision period after launch to address any issues or minor adjustments. For ongoing changes and updates, we offer flexible hourly rates or monthly retainer packages. We're committed to ensuring your complete satisfaction both during and after the project."
-  }
+    answer:
+      "We include a revision period after launch to address any issues or minor adjustments. For ongoing changes and updates, we offer flexible hourly rates or monthly retainer packages. We're committed to ensuring your complete satisfaction both during and after the project.",
+  },
 ];
 
 const FAQ = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="FAQ | Kessel Solutions"
+        description="Answers to common questions about our web design, development, marketing services, timelines, pricing, and process."
+        canonical="https://kesselsolutions.netlify.app/faq"
+      />
+
       <Header />
-      
+
       <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 lg:pb-32 px-4 md:px-6 lg:px-12 overflow-hidden">
         <div className="container mx-auto max-w-4xl">
           <motion.div
