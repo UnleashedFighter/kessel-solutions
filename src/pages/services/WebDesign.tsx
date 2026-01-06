@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -22,8 +23,14 @@ const WebDesign = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Web Design Services | Conversion-Focused Design | Kessel Solutions"
+        description="Premium web design built to convert—mobile-first UI/UX, prototypes, accessibility, performance, and interfaces that drive action."
+        canonical="https://kesselsolutions.netlify.app/services/web-design"
+      />
+
       <Header />
-      
+
       <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 px-4 md:px-6 lg:px-12">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -56,7 +63,9 @@ const WebDesign = () => {
                 DESIGN THAT CONVERTS
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                We don't just make things look good—we engineer digital experiences that drive measurable results. Every pixel, every interaction, every animation is strategically designed to guide users toward conversion. Our design process combines deep user research, conversion psychology, and cutting-edge aesthetics to create interfaces that don't just attract attention—they hold it and convert it into action.
+                We don't just make things look good—we engineer digital experiences that drive
+                measurable results. Every pixel, every interaction, every animation is designed
+                to guide users toward conversion.
               </p>
             </div>
 
@@ -65,10 +74,13 @@ const WebDesign = () => {
                 OUR APPROACH
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed mb-6">
-                We start by understanding your users, your market, and your goals. Through comprehensive research and competitive analysis, we identify opportunities to differentiate your brand and optimize user flows. Our design system approach ensures consistency across all touchpoints while maintaining the flexibility to adapt and evolve.
+                We start by understanding your users, your market, and your goals. Through research
+                and competitive analysis, we identify opportunities to differentiate your brand and
+                optimize user flows.
               </p>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                From wireframes to high-fidelity prototypes, we iterate rapidly based on data and user feedback. The result? Interfaces that feel intuitive, look stunning, and perform exceptionally across all devices and platforms.
+                From wireframes to high-fidelity prototypes, we iterate rapidly. The result: interfaces
+                that feel intuitive, look stunning, and perform across devices.
               </p>
             </div>
 
@@ -116,11 +128,8 @@ const WebDesign = () => {
       </section>
 
       <Footer />
-      
-      <ContactFormModal
-        open={isContactModalOpen}
-        onOpenChange={setIsContactModalOpen}
-      />
+
+      <ContactFormModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
     </div>
   );
 };
