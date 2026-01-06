@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
@@ -17,6 +18,12 @@ const SectionDivider = () => (
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Kessel Solutions | Premium Web Design & Performance Marketing"
+        description="High-converting websites, modern development, and performance marketing systems built to generate leads and revenue."
+        canonical="https://kesselsolutions.netlify.app/"
+      />
+
       <Header />
       <Hero />
       <SectionDivider />
