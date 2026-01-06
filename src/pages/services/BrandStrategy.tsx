@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -22,8 +23,14 @@ const BrandStrategy = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Brand Strategy & Positioning | Kessel Solutions"
+        description="Brand strategy that clarifies your positioning, messaging, and identity—logo, visuals, guidelines, and a brand built to stand out."
+        canonical="https://kesselsolutions.netlify.app/services/brand-strategy"
+      />
+
       <Header />
-      
+
       <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 px-4 md:px-6 lg:px-12">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -56,7 +63,8 @@ const BrandStrategy = () => {
                 STAND OUT OR STAY INVISIBLE
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                In a crowded market, mediocre branding is the fastest path to obscurity. We craft brand identities that command attention and build lasting recognition. Through strategic positioning, distinctive visual systems, and compelling messaging, we transform businesses into memorable brands that resonate with their ideal audience.
+                In a crowded market, mediocre branding is the fastest path to obscurity.
+                We craft brand identities that command attention and build lasting recognition.
               </p>
             </div>
 
@@ -65,10 +73,12 @@ const BrandStrategy = () => {
                 STRATEGY FIRST, DESIGN SECOND
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed mb-6">
-                Beautiful design without strategy is just decoration. We start by defining your unique position in the market—what you stand for, who you serve, and why you matter. This strategic foundation informs every visual and verbal decision, ensuring your brand isn't just pretty—it's purposeful.
+                Beautiful design without strategy is just decoration. We start by defining
+                your unique position in the market—what you stand for, who you serve, and why you matter.
               </p>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                From logo design and color systems to brand voice and messaging frameworks, we build comprehensive brand identities that work across every touchpoint. The result? A brand that looks professional, feels authentic, and drives business growth.
+                From logo design and color systems to brand voice and messaging frameworks, we build
+                comprehensive brand identities that work across every touchpoint.
               </p>
             </div>
 
@@ -116,11 +126,8 @@ const BrandStrategy = () => {
       </section>
 
       <Footer />
-      
-      <ContactFormModal
-        open={isContactModalOpen}
-        onOpenChange={setIsContactModalOpen}
-      />
+
+      <ContactFormModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
     </div>
   );
 };
