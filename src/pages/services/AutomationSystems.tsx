@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -22,8 +23,14 @@ const AutomationSystems = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Automation Systems | CRM, Workflows & Integrations | Kessel Solutions"
+        description="Automation systems that eliminate busywork—CRM automation, API integrations, workflows, and scalable business logic."
+        canonical="https://kesselsolutions.netlify.app/services/automation-systems"
+      />
+
       <Header />
-      
+
       <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 px-4 md:px-6 lg:px-12">
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -56,7 +63,9 @@ const AutomationSystems = () => {
                 WORK SMARTER, NOT HARDER
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                Manual processes are revenue killers. Every repetitive task is time and money wasted on work a machine could handle better. We build intelligent automation systems that eliminate busywork, reduce errors, and free your team to focus on what actually grows your business. The result? Operations that scale without adding headcount.
+                Manual processes are revenue killers. We build intelligent automation
+                systems that eliminate busywork, reduce errors, and free your team to
+                focus on what actually grows your business.
               </p>
             </div>
 
@@ -65,10 +74,13 @@ const AutomationSystems = () => {
                 CUSTOM INTEGRATIONS, SEAMLESS FLOWS
               </h2>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed mb-6">
-                Your tools should work together, not against each other. We connect your existing systems—CRM, marketing platforms, databases, APIs—into unified workflows that eliminate data silos and manual data entry. From lead capture to customer onboarding, we automate the tedious so you can focus on the strategic.
+                Your tools should work together, not against each other. We connect
+                CRMs, marketing platforms, databases, and APIs into unified workflows
+                that eliminate data silos.
               </p>
               <p className="text-base md:text-lg text-muted-foreground font-inter font-light leading-relaxed">
-                Whether it's email sequences, data synchronization, custom business logic, or complex multi-step workflows, we engineer automation that just works. Set it once, benefit forever.
+                From email automation to complex multi-step logic, we engineer
+                automation that just works—set it once, benefit forever.
               </p>
             </div>
 
@@ -86,7 +98,9 @@ const AutomationSystems = () => {
                     className="flex items-center gap-3 p-4 border border-border bg-card hover:border-primary transition-colors"
                   >
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-sm md:text-base font-inter">{feature}</span>
+                    <span className="text-sm md:text-base font-inter">
+                      {feature}
+                    </span>
                   </motion.div>
                 ))}
               </div>
@@ -116,7 +130,7 @@ const AutomationSystems = () => {
       </section>
 
       <Footer />
-      
+
       <ContactFormModal
         open={isContactModalOpen}
         onOpenChange={setIsContactModalOpen}
